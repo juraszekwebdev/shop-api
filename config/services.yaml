@@ -23,9 +23,18 @@ services:
 
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
-    App\Controller\:
-        resource: '../src/Controller/'
+    App\Api\:
+        resource: '../src/Api/'
         tags: ['controller.service_arguments']
+
+    App\Auth\:
+        resource: '../src/Auth/'
+        tags: [ 'controller.service_arguments' ]
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    App\JWT\JWTCreatedListener:
+        arguments: [ '@request_stack' ]
+        tags:
+            - { name: kernel.event_listener, event: lexik_jwt_authentication.on_jwt_created, method: onJWTCreated }

@@ -1,0 +1,27 @@
+auth:
+    resource: ../../src/Auth
+    type: annotation
+    prefix:
+        auth: /auth
+
+api_authorized:
+    resource: ../../src/Api/Authorized
+    type: annotation
+    prefix:
+        api_authorized: /api/authorized
+
+api_admin:
+    resource: ../../src/Api/Admin
+    type: annotation
+    prefix:
+        api_admin: /api/admin
+
+api_unauthorized:
+    resource: ../../src/Api/UnAuthorized
+    type: annotation
+    prefix:
+        api_unauthorized: /api/unauthorized
+
+kernel:
+    resource: ../../src/Kernel.php
+    type: annotation
