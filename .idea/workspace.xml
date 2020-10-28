@@ -11,31 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af0dd0c4-7fa1-4772-8817-9ab3f2b39435" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/uploads/products/1/product.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Admin/Product/AddController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Authorized/Order/AddController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Authorized/Order/FindController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Authorized/Order/ListController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Authorized/User/ChangePasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Authorized/User/EditAddressController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Authorized/User/EditPersonalDataController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/UnAuthorized/Product/AddToCartController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/UnAuthorized/Product/ChangeQuantityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/UnAuthorized/Product/FindController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/UnAuthorized/Product/ListController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/UnAuthorized/Product/RemoveFromCartController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Auth/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Auth/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JWT/JWTCreatedListener.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JWT/JWTManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +167,7 @@
       <workItem from="1603716711221" duration="1241000" />
       <workItem from="1603751382129" duration="812000" />
       <workItem from="1603907154625" duration="6000" />
-      <workItem from="1603907179958" duration="3172000" />
+      <workItem from="1603907179958" duration="3318000" />
     </task>
     <servers />
   </component>
