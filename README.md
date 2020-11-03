@@ -1,19 +1,22 @@
 # Store API
-Store API for Store App
+This is API for [Store App](https://pj-store.netlify.app). It is written in Symfony PHP Framework.
 
-Demo version: [LINK](https://pj-store-api.herokuapp.com/public/)
+Demo version: [LINK](https://pj-store.netlify.app)
 
 ## Running project
 
-In the project directory, you can run:
-
-Install vendors:
+### Install dependencies
 ### `composer install`
-Make database migrations:
+
+### Change configuration in .env.local (local) or .env (production)
+
+### Import database
 ### `php bin/console doctrine:migrations:migrate`
-Start dev server
-### `php bin/console server:start`
+
+### Run locally
+### `symfony server:start`
 
 ## Used technologies
 - Symfony
-- Lexik JWT Authentication Bundle
+- MySQL
+- JWT Auth
