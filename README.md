@@ -1,4 +1,4 @@
-# Book Finder App
+# Store API
 Store API for Store App
 
 Demo version: [LINK](https://pj-store-api.herokuapp.com/public/)
