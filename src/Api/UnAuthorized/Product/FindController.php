@@ -8,6 +8,8 @@ use App\Entity\Order;
 use App\Entity\Product;
 use App\JWT\JWTManager;
 use Doctrine\ORM\AbstractQuery;
+use Doctrine\ORM\NonUniqueResultException;
+use Doctrine\ORM\NoResultException;
 use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -35,11 +37,23 @@ class FindController extends AbstractController
     {
         $requestedContent = json_decode($request->getContent(), true);
 
-        $find = $this->getDoctrine()->getRepository(Order::class)->createQueryBuilder('p')
-            ->setParameter('id', $requestedContent['id'])
-            ->where('p.id = :id')
-            ->getQuery()
-            ->getSingleResult(AbstractQuery::HYDRATE_ARRAY);
+        $find = null;
+        try {
+            $find = $this->getDoctrine()->getRepository(Order::class)->createQueryBuilder('p')
+                ->setParameter('id', $requestedContent['id'])
+                ->where('p.id = :id')
+                ->getQuery()
+                ->getSingleResult(AbstractQuery::HYDRATE_ARRAY);
+        } catch (NoResultException | NonUniqueResultException $e) {
+            return new JsonResponse(
+                [
+                    'status' => 'error',
+                    'statusMsg' => $e->getMessage(),
+                    'data' => null,
+                ],
+                JsonResponse::HTTP_OK
+            );
+        }
 
         return new JsonResponse(
             [
