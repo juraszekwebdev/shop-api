@@ -16,7 +16,7 @@ Demo version: [LINK](https://pj-store.netlify.app)
 ### Import database
 ### `php bin/console doctrine:migrations:migrate`
 
-### Run locally host: http://127.0.0.1:8000
+### Run locally (http://127.0.0.1:8000)
 ### `symfony server:start`
 
 ## Used technologies
