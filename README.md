@@ -1,7 +1,7 @@
 # Store API
 This is API for [Store App](https://github.com/juraszekwebdev/store-app). It is written in Symfony PHP Framework.
 
-Demo version: [LINK](http://pj-store-api.herokuapp.com/public/)
+Demo: [LINK](http://pj-store-api.herokuapp.com/public/)
 
 ## Running project locally
 
